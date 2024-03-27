@@ -1,0 +1,14 @@
+---
+- name: kernal version
+  hosts: all
+  become: yes
+  tasks: 
+   - name: upgrade ubuntu kernal
+     when: ansible_os_family == "Debian"
+     apt:
+       upgrade: dist
+   - name: upgrade amazon kernal
+     when: ansible_distribution == "Amazon"
+     yum: 
+       name: kernal
+       state: latest

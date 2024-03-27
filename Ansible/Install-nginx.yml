@@ -1,0 +1,13 @@
+---
+- name: install nginx in ubuntu
+  hosts: ubuntu
+  tasks: 
+    - name: update apt
+      apt: 
+        name: nginx
+        state: latest
+    - name: install nginx
+      apt:
+        name: nginx
+        state: present
+      
