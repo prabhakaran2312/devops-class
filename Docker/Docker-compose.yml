@@ -9,18 +9,6 @@ services:
       - nginx-backup:/backup-data 
     networks:
       - qtree-network
-  dbserver: 
-    image: postgres:latest
-    environment:
-      POSTGRES_DB: mydb
-      POSTGRES_USER: myuser
-      POSTGRES_PASSWORD: mypassword
-    ports:
-      - "5000:5432" 
-    volumes:
-      - pg-data:/var/lib/postgresql/data
-    networks:
-      - qtree-network
 networks:
   qtree-network: 
     driver: bridge 
