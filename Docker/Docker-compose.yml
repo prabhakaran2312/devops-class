@@ -13,6 +13,5 @@ networks:
   qtree-network: 
     driver: bridge 
 volumes:
-  pg-data: 
   nginx-backup: 
   nginx-data: 

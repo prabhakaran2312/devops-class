@@ -1,0 +1,2 @@
+[ubuntu]
+172.31.25.10 ansible_user=ubuntu ansible_ssh_privatekey=jenkins.pem
