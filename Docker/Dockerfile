@@ -7,3 +7,4 @@ RUN apt install default-jdk -y
 COPY index.html /var/www/html
 EXPOSE 8002
 CMD apachectl -D FOREGROUND
+#
